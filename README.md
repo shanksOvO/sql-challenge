@@ -16,7 +16,7 @@ For this project, you’ll design the tables to hold the data from the CSV files
 
 # Files
 Download the following files to help you get started:
-[Module 9 Challenge](https://github.com/shanksOvO/sql-challenge/data)
+[Module 9 Challenge](https://github.com/shanksOvO/sql-challenge/tree/main/Data)
 
 # Instructions
 This Challenge is divided into three parts: data modeling, data engineering, and data analysis.
