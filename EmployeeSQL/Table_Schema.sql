@@ -32,16 +32,16 @@ CREATE TABLE dept_emp(
 
 -- Create table dept_manager
 CREATE TABLE dept_manager(
-	dept_no VARCHAR NOT NULL,
-	emp_no INT NOT NULL,
+	dept_no VARCHAR NOT NULL PRIMARY KEY,
+	emp_no INT NOT NULL PRIMARY KEY,
 	FOREIGN KEY (dept_no) REFERENCES departments(dept_no),
 	FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
 );
 
 -- Create table salaries
 CREATE TABLE salaries(
-	emp_no INT NOT NULL,
-	salary INT NOT NULL,
+	emp_no INT NOT NULL PRIMARY KEY,
+	salary INT NOT NULL PRIMARY KEY,
 	PRIMARY KEY (emp_no),
 	FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
 );
