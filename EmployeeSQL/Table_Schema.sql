@@ -24,8 +24,8 @@ CREATE TABLE employees(
 
 -- Create table dept_emp
 CREATE TABLE dept_emp(
-	emp_no INT NOT NULL,
-	dept_no VARCHAR NOT NULL,
+	emp_no INT NOT NULL PRIMARY KEY,
+	dept_no VARCHAR NOT NULL PRIMARY KEY,
 	FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
 	FOREIGN KEY (dept_no) REFERENCES departments(dept_no)
 );
@@ -40,8 +40,8 @@ CREATE TABLE dept_manager(
 
 -- Create table salaries
 CREATE TABLE salaries(
-	emp_no INT NOT NULL PRIMARY KEY,
-	salary INT NOT NULL PRIMARY KEY,
+	emp_no INT NOT NULL,
+	salary INT NOT NULL,
 	PRIMARY KEY (emp_no),
 	FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
 );
